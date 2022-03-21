@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 35,
-  },git
+  },  
   inputGroup: {
     flex: 1,
     padding: 0,
