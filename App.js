@@ -5,16 +5,16 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
 const Stack = createNativeStackNavigator();
 
-import UsersLists from './screens/UsersList';
-import CreateUserScreen from './screens/CreateUserScreen';
-import UserDetailScreen from './screens/UserDetailScreen';
+import TasksListScreen from './screens/TasksListScreen';
+import CreateTaskScreen from './screens/CreateTaskScreen';
+import TaskDetailScreen from './screens/TaskDetailScreen';
 
 function MyStack(){
   return(
     <Stack.Navigator>
-      <Stack.Screen name='CreateUserScreen' component={CreateUserScreen} />
-      <Stack.Screen name='UsersLists' component={UsersLists} />
-      <Stack.Screen name='UserDetailScreen' component={UserDetailScreen} />
+      <Stack.Screen name='TasksListScreen' component={TasksListScreen} />
+      <Stack.Screen name='CreateTaskScreen' component={CreateTaskScreen} />
+      <Stack.Screen name='TaskDetailScreen' component={TaskDetailScreen} />
     </Stack.Navigator>
   )
 }
