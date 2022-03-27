@@ -47,6 +47,7 @@ const CreateTaskScreen = (props) => {
       </View>
       <View>
         <Button 
+          color='#3EB489'
           title="Save task" 
           onPress={() => saveNewTask()}
         >

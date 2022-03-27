@@ -12,9 +12,21 @@ import TaskDetailScreen from './screens/TaskDetailScreen';
 function MyStack(){
   return(
     <Stack.Navigator>
-      <Stack.Screen name='TasksListScreen' component={TasksListScreen} />
-      <Stack.Screen name='CreateTaskScreen' component={CreateTaskScreen} />
-      <Stack.Screen name='TaskDetailScreen' component={TaskDetailScreen} />
+      <Stack.Screen 
+        name='TasksListScreen' 
+        component={TasksListScreen} 
+        options={{title: 'Tasks List'}} 
+      />
+      <Stack.Screen 
+        name='CreateTaskScreen' 
+        component={CreateTaskScreen} 
+        options={{title: 'Create a new task'}} 
+      />
+      <Stack.Screen 
+        name='TaskDetailScreen' 
+        component={TaskDetailScreen} 
+        options={{title: 'Details'}} 
+      />
     </Stack.Navigator>
   )
 }
